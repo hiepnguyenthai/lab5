@@ -6,6 +6,15 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Laptop</h1>
+    <table border="1">
+      <tr>
+        <th>Laptop Brand</th>
+      </tr>
+      {{#each laptops }}
+        <tr>
+          <td>{{this }}</td>
+        </tr>
+      {{/each }}
+    </table>
   </body>
 </html>

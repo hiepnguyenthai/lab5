@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 
 app.get("/mobile", (req, res) => {
   var list = ["IPhone", "SamSung", "Oppo", "Huewai"]
-  res.render("mobile");
+  res.render("mobile", {mobiles: list});
 });
 
 app.get("/laptop", (req, res) => {

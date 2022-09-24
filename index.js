@@ -16,7 +16,9 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");
 
 app.get("/", (req, res) => {
-  res.render("index");
+  var name = "Cloud Computing";
+  var code = 1644;
+  res.render("index", {name: name, ma: code, ky: "Fall 2022"});
 });
 
 app.get("/mobile", (req, res) => {
